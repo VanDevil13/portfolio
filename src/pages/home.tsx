@@ -97,14 +97,14 @@ const VIDEO_EMBEDS_RE: { src: string; label: string }[] = [
 ];
 
 const IMAGES = {
-  universe: '/images/hero-milkyway.png',
-  nebula:   '/images/nebula-detail.png',
-  aurora:   '/images/s2-aurora.png',
-  somerset: '/images/glastonbury-tor.png',
-  oak:      '/images/s6-oak.png',
-  cosmos:   '/images/hero-cosmos.png',
-  unLogo:   '/images/undrr_logo.png',
-  bluLogo:  '/images/blu_logo.png',
+  universe: `${import.meta.env.BASE_URL}images/hero-milkyway.png`,
+  nebula:`${import.meta.env.BASE_URL}images/nebula-detail.png`,
+  aurora:`${import.meta.env.BASE_URL}images/s2-aurora.png`,
+  somerset: `${import.meta.env.BASE_URL}images/glastonbury-tor.png`,
+  oak:   `${import.meta.env.BASE_URL}images/s6-oak.png`,
+  cosmos:`${import.meta.env.BASE_URL}images/hero-cosmos.png`,
+  unLogo:`${import.meta.env.BASE_URL}images/undrr_logo.png`,
+  bluLogo:  `${import.meta.env.BASE_URL}images/blu_logo.png`,
 };
 
 const WORLD_MARKET_DATA: Record<string, { name: string; clients: string[] }> = {
@@ -346,7 +346,7 @@ function DesktopPortfolio() {
   const byId = (id: string) => SECTIONS.find(s => s.id === id)!;
 
   return (
-    <div ref={vpRef} style={{ width: '100%', height: '100vh', overflow: 'hidden', background: '#020817', backgroundImage: `url('/images/hero-milkyway.png')`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', fontFamily: "'Inter',-apple-system,sans-serif", userSelect: 'none' }}>
+    <div ref={vpRef} style={{ width: '100%', height: '100vh', overflow: 'hidden', background: '#020817', backgroundImage: `url(`${import.meta.env.BASE_URL}images/hero-milkyway.png`)`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', fontFamily: "'Inter',-apple-system,sans-serif", userSelect: 'none' }}>
       <div style={{ position: 'absolute', width: UW, height: UH, transformOrigin: '0 0', transform: `translate(${view.tx}px,${view.ty}px) scale(${view.scale})`, transition: ready ? 'transform 0.92s cubic-bezier(0.77,0,0.175,1)' : 'none', willChange: 'transform' }}>
         <img src={IMAGES.universe} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.14 }}/>
         <img src={IMAGES.nebula} alt="" style={{ position: 'absolute', right: 0, top: 0, width: '40%', height: '48%', objectFit: 'cover', opacity: 0.22, mixBlendMode: 'screen' }}/>
