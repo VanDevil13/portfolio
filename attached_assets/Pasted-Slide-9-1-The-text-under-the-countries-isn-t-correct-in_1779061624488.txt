@@ -1,0 +1,19 @@
+Slide 9:
+
+1- The text under the countries isn't correct in the most of them.
+
+China & malaysia are part of OneCard Coverage. Under China and Malaysia just add OneCard.
+The GCC and North Africa are the area covered by OneCard as well. exclude only Sudan and Mauritania.
+Turkey: VAAL Real Estate.
+Saudi Arabia: OneCard, then Start with "Digital Agencies" between brackets and then list the following without the word "Saudi Arabia" next to each one of them: Khaled Alajmi Digital Presence “Saudi Arabia”Medical Sector “Saudi Arabia”The Meat Shop “Saudi Arabia”Rare Market “Saudi Arabia”Asmak Al Zaitoun “Saudi Arabia”Osman Baik “Saudi Arabia”Bike lane “Saudi Arabia”Kathef “Saudi Arabia”LA Chocolate Bar “Saudi Arabia”Crownberry “Saudi Arabia”Special Loaf “Saudi Arabia”Al Asmak Al Saudia “Saudi Arabia”Cavalli Caffee “Saudi Arabia”Marvella Community “Saudi Arabia”, Samref, Yasref.
+UNDRR, Yallaforma, Xclusives Card to be added to Egypt.
+Swissblu: SA, Qatar, UAE, UK, Germany.
+USA: Egypt 7000. the university wasn't a client to be added to the US.
+Tanzania is missing, add it and under it list: Safaya, Shanga Paje, Canary Hotels & SPA, Zanzibar Seawalk.
+UAE: remove Xclusives Card because it was only in Egypt and remove OLM and add the real estate projects like DAMAC, EMAAR, DUBAI CREEK , Marquise Square, SLS Dubai, Dubai Hills, Bloom Towers and any other real estate project in UAE you know from the info i already provided to you.
+Egypt: add to the list the real estate project called SARAI and make it before ART City, also Palm Hills before Art City and push Art City little bit below.
+2- the logos blocks down there should be small to fit several logos and better to be circles to be suitbale for different dimensions and more more fiendly to contain them. i don't want to need to change every logo block later to fit.
+
+After you finish these edits, give me a preview link so i can how far we reached in a normal size.
+
+Make sure to use the least tokens possible in this process.

@@ -1,0 +1,43 @@
+eneral Notes:
+
+Are the Xs at the top right corner of each image will be still visible after exporting the project or they are visible now because we still in the editing phase? if they will be still visible, make sure that they get deleted before the exporting.
+
+in the most of slides, there is a bold dot at the centre, the same question and requests as the Xs.
+
+slide 2: Adjust the image to fully fill the block as we did in the image in slide 1.
+
+slide 3: in the section of the certificates and qualifications; the last block logo text at the bottom should be Google Ads Apps Certified and under it "Google" with the same style and font as the bottom text of the same position of the different logos.
+
+slide 4: Crop 30% vertically of the last two blocks on the bottom right side. it's white space with no need to have. and then try to expand them to be more obvious and readable.
+
+slide 6:
+1- images have been added.
+2- The 2 blocks of meta and google ads need more space vertically to be shown bigger and more visible.
+3- the spaces for videos aren't working, i'll provide you with the link of each video and i want you to add them so the videos could be displayed and played on the portfolio:
+Video 1: https://www.facebook.com/100618278584417/posts/252977463348497
+
+Video 2: https://www.facebook.com/100063793010010/posts/296652525647657/
+
+Video 3: https://www.facebook.com/100063793010010/posts/252983913347852/
+
+Slide 7:
+1- add more blocks for the freelance: 2 next to the text block and more below to fill the horizontal width of the main block under this section and to be smaller than the 2 main blocks next to the freelance text block.
+2- the first block that has the UN secertary post need to be narrower to fit the image dimensions, which is 1086x1316. Also the first image block of the freelance of the same dimensions and the block requires cropping too.
+3- VAAL text block should be on the left side and under the new line of the freelance visuals and 2 blocks for VAAL visuals next to it, one for an image and the other one for a video by adding a link like all the video blocks.
+The VAAL Video: https://www.youtube.com/watch?v=MYHsO-wVEzk
+Slide 9:
+
+1- The text pop up when i hover over countries isn't correct in most of them.
+
+China & malaysia are part of OneCard Coverage. Under China and Malaysia just add OneCard.
+The GCC and North Africa are the area covered by OneCard as well. exclude only Sudan and Mauritania.
+Turkey: VAAL Real Estate.
+Saudi Arabia: OneCard, then Start with "Digital Agencies" between brackets and then list the following without the word "Saudi Arabia" next to each one of them: Khaled Alajmi Digital Presence , Medical Sector, The Meat Shop, Rare Market, Asmak Al Zaitoun Osman Baik, Bike lane, Kathef, LA Chocolate Bar, Crownberry, Special Loaf, Al Asmak Al Saudia, Cavalli Caffee, Marvella Community, Samref, Yasref.
+UNDRR, Yallaforma, Xclusives Card to be added to Egypt.
+Swissblu: SA, Qatar, UAE, UK, Germany.
+USA: Egypt 7000. The university wasn't a client to be added to the US.
+Tanzania is missing, add it and under it list: Safaya, Shanga Paje, Canary Hotels & SPA, Zanzibar Seawalk.
+UAE: remove Xclusives Card because it was only in Egypt and remove OLM and add the real estate projects like DAMAC, EMAAR, DUBAI CREEK , Marquise Square, SLS Dubai, Dubai Hills, Bloom Towers and any other real estate project in UAE you know from the info i already provided to you.
+Egypt: add to the list the real estate project called SARAI and make it before ART City, also Palm Hills before Art City and push Art City little bit below.
+i want to change the design of the pop up box when the user hover over a country to look like strategic digital maps in movies as a line comes out of the country from an end and connect to a box on the other end outside the country shows the content of each country.
+put as many blocks for the logos at the bottom to fill the line specialised for them horizontally in the main block of the slide with the same size you already made

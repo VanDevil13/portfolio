@@ -1,0 +1,22 @@
+Update Slide 6 (UN / NGO / Freelance) with the following content. Keep the 2x2 image upload grid on the right. Replace all left-side text.
+
+SECTION 1 — UN UNDRR:
+Logo: UN UNDRR (keep existing logo)
+Dates: June - September 2020
+Heading: United Nations Office for Disaster Risk Reduction — Arab States
+Copy: "Led digital campaign delivery for UNDRR's regional communications team during the height of the COVID-19 pandemic in 2020 — a period of critical public awareness need. Planned and executed paid media campaigns targeting policy and public audiences across the Arab States region, with goals of increasing awareness and driving traffic to the official UNDRR website. Managed social media content and strengthened online visibility across key platforms."
+
+SECTION 2 — Freelance:
+Heading: Freelance Digital Marketing | June 2020 - June 2023
+Copy: "Worked with clients across the UK, EMEA, and GCC spanning non-profit, e-commerce, real estate, petroleum, food and beverage, retail, tourism, medical, beauty, cinema, and mobile apps — including a UN body and major regional brands."
+Add a sub-line: "Selected UK project: Created editorial content, pricing collateral, and offline marketing materials for Vicky's Beauty Box (UK)."
+
+SECTION 3 — VAAL Real Estate Ghana:
+Heading: VAAL Real Estate | Digital Marketing Manager | Oct 2021 - June 2023
+Copy: "Led remote digital marketing team. Developed lead generation campaigns that increased closed deals by 23% within 6 months."
+
+RIGHT SIDE — replace existing upload slots with:
+- Slot 1: "Upload: UNDRR campaign screenshot or social post"
+- Slot 2: "Upload: UNDRR analytics or reach screenshot"
+- Slot 3: "Upload: Freelance campaign visual or client work sample"
+- Slot 4 (replace geo map placeholder): ADD an actual interactive world map highlighting all countries worked in: UK, UAE, Saudi Arabia, Qatar, Ghana, Egypt, Malaysia, Turkey, China, USA. Use a simple SVG or JS map with highlighted country fills. Label it "Markets covered." No upload slot needed here — build the map dir

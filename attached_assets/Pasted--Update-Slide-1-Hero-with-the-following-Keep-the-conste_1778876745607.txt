@@ -1,0 +1,123 @@
+- Update Slide 1 (Hero) with the following. Keep the constellation/starfield background and layout. Only change the text content and right-side visual.
+
+NAME: Moustafa Al-Etreby
+TITLE: Digital Marketing Manager
+
+STAT BADGES (keep the 3 badge pill style):
+- 200% sales growth
+- +4,400% ROMI
+- 87% CPA reduction
+
+HEADLINE (replace current):
+"From paid media to profitable growth — across 8 markets, 11 years, and every channel that matters."
+
+SUB-TAGLINE (add below headline, smaller text):
+"Now based in Somerset. Open to UK-wide and remote roles."
+
+CTA BUTTON: "Connect on LinkedIn" — keep existing LinkedIn URL.
+
+RIGHT SIDE VISUAL: Replace the English coast photo placeholder with a professional headshot photo. Add an image upload slot labelled "Upload headshot here" so the photo can be added later. Do not use any other placeholder image.
+
+- Slide 2: Update Slide 2 (About) with the following. Keep the Glastonbury Tor photo on the left. Only update the right-side text content.
+
+HEADING (keep):
+"Somerset-based. Globally focused."
+
+BIO (replace current):
+"Marketing expert with hands-on experience scaling acquisition across multiple international markets. I manage multi-channel campaigns with full responsibility for strategy, budget, and results — capturing high-intent demand, building measurement frameworks, and aligning paid media with SEO, CRM, and commercial objectives for consistent, profitable growth."
+
+EDUCATION BLOCK (replace current):
+- BSc Special Astronomy (Physics and Mathematics), Al Azhar University — Graduated top of class. The analytical foundation behind my approach to data, measurement, and performance marketing.
+- CIM Level 6, UK — Commercial Intelligence (Distinction) | Strategy and Planning (Pass)
+
+MARKETS LINE (keep as-is):
+UK · France . Germany . UAE · Saudi Arabia · Qatar · Iraq . Ghana · Egypt · Malaysia · Turkey · China · USA · Tanzania
+
+- Update Slide 3 (Results) stat cards as follows. Keep the existing card grid layout and style. Only change the content inside each card as specified.
+
+CARD 1 — keep as-is:
++4,400% | ROMI in one year | ASRS Ltd | UK flag
+
+CARD 2 — keep as-is:
+200% | Sales growth | blu/Swissblu | UAE, KSA, Qatar, UK, Germany flags
+
+CARD 3 — CHANGE: remove the 85% CPS card entirely and replace with this single CPA card:
+87% | CPA reduction | blu/OLM | UAE, KSA, Qatar, UK, Germany flags
+
+CARD 4 — keep as-is:
+#1 | Google SEO rankings | ASRS Ltd | UK flag
+
+CARD 5 — keep as-is:
+23% | More closed deals | VAAL Real Estate | Ghana flag
+
+CARD 6 — keep as-is:
+1st | Egyptian documentary on Netflix | Lift Like a Girl | Egypt flag
+Add a subtitle line beneath: "Led end-to-end digital campaign — from zero to Netflix launch."
+
+CARD 7 — keep as-is:
+30% | Conversion rate lift | A/B testing | Egypt flag
+
+CARD 8 — ADD NEW CARD:
+QUALIFICATIONS LOGOS SECTION — ADD a new row beneath the stat cards with the heading "Certifications and qualifications" and display the following logos in a horizontal row with a small label under each:
+1. CIM (Chartered Institute of Marketing) — logo + label "CIM Level 6"
+2. Google — logo + label "Google Ads Certified"
+3. Meta — logo + label "Meta Blueprint"
+4. University of Illinois / Coursera — logo + label "Digital Marketing"
+
+Use official logo SVGs or PNGs fetched from the following or the ones i attached:
+- CIM: https://www.cim.co.uk (use their brand logo)
+- Google Ads: use the standard Google Ads product logo
+- Meta Blueprint: use the Meta logo (facebook.com/business branding)
+
+If any logo cannot be fetched automatically, leave a clearly labelled upload slot for each one.
+
+- Update Slide 4 (UK Work / ASRS) with the following. add the ASRS logo instead of the screenshot from google ads mistakenly you added at the place of the logo, role title, and dates. Replace all bullet points and add a quote block. Keep the 3 image upload slots on the right.
+
+ROLE BLOCK (keep):
+ASRS Ltd (Structural Repairs) | Marketing Manager | June 2023 - Sept 2025
+
+BULLET POINTS (replace all current bullets with these):
+- Achieved +4,400% ROMI across all digital marketing activity within one year.
+- Built the company's entire digital ecosystem from scratch — strategy, website content, Google Ads, SEO, CRM, reporting, and all marketing collateral. Not just campaigns: a functioning marketing operation.
+- Secured #1 Google rankings for all priority service and location keywords.
+- Generated high-quality B2B leads via LinkedIn — councils, structural engineers, property managers, insurers, and loss adjusters.
+- Built and managed the company's first CRM system — improving lead tracking, pipeline visibility, and reporting accuracy across the full department's operations.
+
+ADD A QUOTE BLOCK below the bullets (styled as a pull quote):
+"Mate, I have no idea what you're doing — but whatever it is, keep doing it."
+— Colleague, ASRS Ltd (after month one, responding to a surge in inbound leads)
+
+IMAGE UPLOAD SLOTS (right side) — relabel the 3 slots as:
+- Slot 1 (large, top): "Uploaded: Google Ads dashboard
+- Slot 2 (bottom left): "Uploaded: SEO rankings screenshots"
+- Slot 3 (bottom right): "Uploaded: CRM screenshot of the geo map"
+
+
+- Update Slide 5 (Global Campaigns) campaign summary cards. Keep the 2x2 image upload grid on the right. Replace the left column campaign cards with the following.
+
+CAMPAIGN CARD 1 — Swissblu (blu):
+Title: blu / Swissblu
+Stats: 200% sales growth | 87% CPA reduction
+Markets: UAE, KSA, UK, Germany | 2017-2019
+My role: Managed all digital campaigns end-to-end — strategy, media buying, creative briefing, audience targeting, and performance optimisation across social and search. Developed the structured optimisation strategy that delivered the CPA reduction and sales growth.
+
+CAMPAIGN CARD 2 — Lift Like a Girl / Netflix:
+Title: Lift Like a Girl
+Stats: 1st Egyptian documentary on Netflix
+Market: Egypt | 2019
+My role: Led the full end-to-end digital campaign from pre-launch through to Netflix release — content strategy, paid social, community management, and press amplification.
+
+CAMPAIGN CARD 3 — Real Estate:
+Title: Real Estate Campaigns
+Clients: EMAAR, DAMAC, Palm Hills, Hyde Park, Xclusives Card
+Markets: Dubai, Egypt, GCC | 2015-2019
+Audience: GCC - Europe
+My role: Managed campaigns from end-to-end, audience research, creative direction, media buying across Meta and Google, lead generation, reporting, and optimisation. Full ownership across all accounts.
+
+IMAGE UPLOAD GRID (right, keep 2x2 layout) — relabel slots:
+- Top left: "Upload: Swissblu campaign visual or ad screenshot"
+- Top right: "Upload: Lift Like a Girl poster or Netflix screenshot"
+- Bottom left: "Upload: Real estate campaign visual"
+- Bottom right: "Upload: Google Ads or Meta Ads results screenshot"
+
+Note: i added different styles and dimesions of some logos so you have flexibility of adding them in a matching style to the section we work on. 
