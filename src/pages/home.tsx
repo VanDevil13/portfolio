@@ -346,7 +346,7 @@ function DesktopPortfolio() {
   const byId = (id: string) => SECTIONS.find(s => s.id === id)!;
 
   return (
-    <div ref={vpRef} style={{ width: '100%', height: '100vh', overflow: 'hidden', background: '#020817', backgroundImage: `url(`${import.meta.env.BASE_URL}images/hero-milkyway.png`)`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', fontFamily: "'Inter',-apple-system,sans-serif", userSelect: 'none' }}>
+    <div ref={vpRef} style={{ width: '100%', height: '100vh', overflow: 'hidden', background: '#020817', backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-milkyway.png)`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', fontFamily: "'Inter',-apple-system,sans-serif", userSelect: 'none' }}>
       <div style={{ position: 'absolute', width: UW, height: UH, transformOrigin: '0 0', transform: `translate(${view.tx}px,${view.ty}px) scale(${view.scale})`, transition: ready ? 'transform 0.92s cubic-bezier(0.77,0,0.175,1)' : 'none', willChange: 'transform' }}>
         <img src={IMAGES.universe} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.14 }}/>
         <img src={IMAGES.nebula} alt="" style={{ position: 'absolute', right: 0, top: 0, width: '40%', height: '48%', objectFit: 'cover', opacity: 0.22, mixBlendMode: 'screen' }}/>
