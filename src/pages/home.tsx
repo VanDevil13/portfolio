@@ -215,89 +215,43 @@ function Rich({ text, color = 'rgba(255,255,255,.72)', size = 14 }: { text: stri
 }
 
 // ─── IMAGE SLOT — server-backed (GCS), visible to all users ───────────────────
+const FILE_MAP: Record<string, string> = {
+  hero_headshot: 'Slide 1 - Headshot.jpeg',
+  cert_cim: 'Slide 3 CIM official logo.jpg',
+  cert_google: 'Slide 3 - Google ads certificate badge 1.png',
+  cert_meta: 'Slide 3 - Meta-Logo.png',
+  cert_coursera: 'Slide 3 - university-of-illinois_at_urbana_champaign_logo- horizontal.png',
+  asrs_logo: 'Slide 4 part 1 - Before the name of the company in the header - ASRS logo copy.jpeg',
+  asrs_gads: 'Slide 4 part 1 - on the top of the map - Google ads.png',
+  asrs_map: 'Slide 4 part 1 - under the Google ads screenshot - geo coverage of projects all over the UK 1 - ASRS.png',
+  asrs_seo1: 'Slide 4 Part 2 - on the left side  GEO SEO.png',
+  asrs_seo2: 'Slide 4 part 2 - in the middle between the other 2 images - Picture SERP1.png',
+  asrs_seo3: 'Slide 4 part 2 - on the right side - Picture SERP2.png',
+};
+
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
   accent: string; label: string; height?: number; width?: string; sk: string; cover?: boolean; filledBg?: string; circle?: boolean; fluid?: boolean;
 }) {
-  const lsKey = `mae_has_${sk}`;
-  const serverUrl = `/api/portfolio-images/${encodeURIComponent(sk)}`;
   const br = circle ? '50%' : 10;
-  const [hasImage, setHasImage] = useState<boolean | null>(() => {
-    try { return localStorage.getItem(lsKey) === '1' ? true : null; } catch { return null; }
-  });
-  const [uploadTs, setUploadTs] = useState(0);
-  const ref = useRef<HTMLInputElement>(null);
+  const filename = FILE_MAP[sk];
+  const imgSrc = filename ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(filename)}` : null;
 
-  useEffect(() => {
-    if (hasImage !== null) return;
-    fetch(serverUrl, { method: 'HEAD' })
-      .then(r => {
-        const found = r.ok;
-        setHasImage(found);
-        try { found ? localStorage.setItem(lsKey, '1') : localStorage.removeItem(lsKey); } catch {}
-      })
-      .catch(() => setHasImage(false));
-  }, [sk, lsKey, serverUrl, hasImage]);
-
-  const handleUpload = (file: File) => {
-    const reader = new FileReader();
-    reader.onload = async (e) => {
-      const dataUrl = e.target?.result as string;
-      try {
-        const res = await fetch('/api/portfolio-images', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sk, dataUrl }),
-        });
-        if (res.ok) { setHasImage(true); setUploadTs(Date.now()); try { localStorage.setItem(lsKey, '1'); } catch {} }
-      } catch {}
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const handleDelete = async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    try { await fetch(`/api/portfolio-images/${encodeURIComponent(sk)}`, { method: 'DELETE' }); } catch {}
-    setHasImage(false);
-    try { localStorage.removeItem(lsKey); } catch {}
-  };
-
-  const imgSrc = uploadTs ? `${serverUrl}?t=${uploadTs}` : serverUrl;
-
-  // ── fluid mode (mobile): images render at their natural aspect ratio ──
   if (fluid) {
-    if (hasImage === null) return <div style={{ height: 4 }}/>;
-    if (hasImage) return (
+    if (!imgSrc) return null;
+    return (
       <div style={{ position: 'relative', borderRadius: 10, overflow: 'hidden', border: `1px solid ${accent}33`, background: 'rgba(0,0,0,.3)' }}>
-        <img src={imgSrc} alt={label} style={{ width: '100%', height: 'auto', display: 'block' }} onError={() => { setHasImage(false); try { localStorage.removeItem(lsKey); } catch {} }}/>
-        {IS_DEV && <button onClick={handleDelete} style={{ position: 'absolute', top: 6, right: 6, width: 22, height: 22, borderRadius: '50%', background: 'rgba(0,0,0,.75)', color: '#fff', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>×</button>}
+        <img src={imgSrc} alt={label} style={{ width: '100%', height: 'auto', display: 'block' }}/>
       </div>
     );
-    // empty fluid slot — invisible, no upload button
-    return null;
   }
 
-  // ── fixed-size mode (desktop / logo slots) ──
-  // in production: empty slots render as a plain transparent box (no upload affordance)
-  if (!IS_DEV && !hasImage) {
+  if (!imgSrc) {
     return <div style={{ borderRadius: br, height, width: width ?? '100%', flexShrink: 0, background: 'transparent' }}/>;
   }
+
   return (
-    <div onClick={() => IS_DEV && hasImage === false && ref.current?.click()} style={{ borderRadius: br, border: hasImage ? `1px solid ${accent}33` : `2px dashed ${accent}55`, background: hasImage ? (filledBg ?? 'rgba(0,0,0,.3)') : `${accent}09`, cursor: IS_DEV && hasImage === false ? 'pointer' : 'default', overflow: 'hidden', position: 'relative', height, width: width ?? '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-      {IS_DEV && <input ref={ref} type="file" accept="image/*" onChange={e => { const f = e.target.files?.[0]; if (f) handleUpload(f); }} style={{ display: 'none' }}/>}
-      {hasImage === null ? (
-        <div style={{ color: 'rgba(255,255,255,.2)', fontSize: 9, letterSpacing: '.06em' }}>…</div>
-      ) : hasImage ? (
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <img src={imgSrc} alt={label} style={{ width: '100%', height: '100%', objectFit: cover ? 'cover' : 'contain', display: 'block', padding: (circle && !cover) ? 4 : 0, boxSizing: 'border-box' }} onError={() => { setHasImage(false); try { localStorage.removeItem(lsKey); } catch {} }}/>
-          {IS_DEV && <button onClick={handleDelete} style={{ position: 'absolute', top: 4, right: 4, width: 20, height: 20, borderRadius: '50%', background: 'rgba(0,0,0,.7)', color: '#fff', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity .2s' }} onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '1'; }} onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '0'; }}>×</button>}
-        </div>
-      ) : (
-        <div style={{ textAlign: 'center', padding: circle ? '4px' : '8px 10px', pointerEvents: 'none' }}>
-          <div style={{ color: accent, fontSize: circle ? 16 : 22, fontWeight: 300, lineHeight: 1, marginBottom: 3 }}>+</div>
-          {!circle && <div style={{ color: accent, fontSize: 9, fontWeight: 600, marginBottom: 1 }}>{label}</div>}
-          {!circle && <div style={{ color: 'rgba(255,255,255,.25)', fontSize: 8 }}>Click to upload</div>}
-        </div>
-      )}
+    <div style={{ borderRadius: br, border: `1px solid ${accent}33`, background: filledBg ?? 'rgba(0,0,0,.3)', overflow: 'hidden', position: 'relative', height, width: width ?? '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+      <img src={imgSrc} alt={label} style={{ width: '100%', height: '100%', objectFit: cover ? 'cover' : 'contain', display: 'block', padding: (circle && !cover) ? 4 : 0, boxSizing: 'border-box' }}/>
     </div>
   );
 }
