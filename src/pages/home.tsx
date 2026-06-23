@@ -243,6 +243,7 @@ const FILE_MAP: Record<string, string> = {
   re_v6: 're_v6.png',
   re_v7: 're_v7.png',
   re_ads1: 're_ads1.png',
+  re_ads2: 're_ads2.png',
 };
 
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
