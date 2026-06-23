@@ -244,6 +244,16 @@ const FILE_MAP: Record<string, string> = {
   re_v7: 're_v7.png',
   re_ads1: 're_ads1.png',
   re_ads2: 're_ads2.png',
+  un_1: 'un_1.png',
+  un_2: 'un_2.png',
+  un_3: 'un_3.png',
+  un_4: 'un_4.png',
+  un_fl_1: 'un_fl_1.png',
+  un_fl_2: 'un_fl_2.png',
+  un_fl_3: 'un_fl_3.png',
+  un_fl_4: 'un_fl_4.png',
+  vaal_logo: 'vaal_logo.png',
+  un_5: 'un_5.png',
 };
 
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
