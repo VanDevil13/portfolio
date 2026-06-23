@@ -221,6 +221,7 @@ const FILE_MAP: Record<string, string> = {
   cert_google: 'cert_google.png',
   cert_meta: 'cert_meta.png',
   cert_coursera: 'cert_coursera.png',
+  cert_ga4: 'cert_googleapps.png',
   asrs_logo: 'asrs_logo.jpg',
   asrs_gads: 'asrs_gads.png',
   asrs_map: 'asrs_map.png',
