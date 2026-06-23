@@ -228,6 +228,13 @@ const FILE_MAP: Record<string, string> = {
   asrs_seo1: 'asrs_seo1.png',
   asrs_seo2: 'asrs_seo2.png',
   asrs_seo3: 'asrs_seo3.png',
+  blu_logo: 'blu_logo.png',
+  blu_v1: 'blu_v1.png',
+  blu_v2: 'blu_v2.png',
+  blu_v3: 'blu_v3.png',
+  blu_ads1: 'blu_ads1.png',
+  llg_v1: 'llg_v1.jpg',
+  llg_v2: 'llg_v2.png',
 };
 
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
