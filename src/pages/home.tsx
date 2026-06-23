@@ -554,7 +554,7 @@ function SlideContent({ section }: { section: Section }) {
     </div>
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10, minHeight: 0 }}>
       <div style={{ flex: 1, minHeight: 0, overflow: 'hidden', borderRadius: 12, border: `1px solid ${accent}33` }}>
-        <ImageSlot accent={accent} label="Movie poster (portrait)" height={440} sk="llg_v1" cover/>
+        <ImageSlot accent={accent} label="Movie poster (portrait)" height={440} sk="llg_v1"/>
       </div>
       <div style={{ flexShrink: 0 }}>
         <ImageSlot accent={accent} label="Netflix / wide visual (landscape)" height={140} sk="llg_v2"/>
