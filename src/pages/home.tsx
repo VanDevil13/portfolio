@@ -542,24 +542,26 @@ function SlideContent({ section }: { section: Section }) {
   );
 
   if (id === 'global2') return (
-    <div style={{ display: 'flex', gap: 22, height: '100%' }}>
-      <div style={{ flex: '0 0 38%', display: 'flex', flexDirection: 'column', gap: 10 }}>
-        <div><div style={tg(accent)}>Global Campaigns · Lift Like A Girl</div><h2 style={{ ...h2s, fontSize: 20, marginBottom: 4 }}>Award-winning social impact campaign.</h2></div>
-        <div style={{ background: 'rgba(255,255,255,.04)', borderRadius: 11, padding: '16px 14px', border: `1px solid ${accent}33`, flex: 1 }}>
-          <div style={{ color: '#fff', fontSize: 17, fontWeight: 800, marginBottom: 8 }}>{CONTENT.global[1].name}</div>
-          <div style={{ color: accent, fontSize: 13, fontWeight: 700, marginBottom: 3 }}>{CONTENT.global[1].stats}</div>
-          <div style={{ color: 'rgba(255,255,255,.38)', fontSize: 11, marginBottom: 10 }}>{CONTENT.global[1].meta}</div>
-          <p style={{ margin: 0, color: 'rgba(255,255,255,.68)', fontSize: 13, lineHeight: 1.65 }}>{CONTENT.global[1].role}</p>
-        </div>
-      </div>
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10 }}>
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <ImageSlot accent={accent} label="Movie poster (portrait)" height={480} width="50%" sk="llg_v1" cover/>
-        </div>
-        <ImageSlot accent={accent} label="Netflix / wide visual (landscape)" height={160} sk="llg_v2"/>
+  <div style={{ display: 'flex', gap: 22, height: '100%' }}>
+    <div style={{ flex: '0 0 38%', display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div><div style={tg(accent)}>Global Campaigns · Lift Like A Girl</div><h2 style={{ ...h2s, fontSize: 20, marginBottom: 4 }}>Award-winning social impact campaign.</h2></div>
+      <div style={{ background: 'rgba(255,255,255,.04)', borderRadius: 11, padding: '16px 14px', border: `1px solid ${accent}33`, flex: 1 }}>
+        <div style={{ color: '#fff', fontSize: 17, fontWeight: 800, marginBottom: 8 }}>{CONTENT.global[1].name}</div>
+        <div style={{ color: accent, fontSize: 13, fontWeight: 700, marginBottom: 3 }}>{CONTENT.global[1].stats}</div>
+        <div style={{ color: 'rgba(255,255,255,.38)', fontSize: 11, marginBottom: 10 }}>{CONTENT.global[1].meta}</div>
+        <p style={{ margin: 0, color: 'rgba(255,255,255,.68)', fontSize: 13, lineHeight: 1.65 }}>{CONTENT.global[1].role}</p>
       </div>
     </div>
-  );
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10, minHeight: 0 }}>
+      <div style={{ flex: 1, minHeight: 0, overflow: 'hidden', borderRadius: 12, border: `1px solid ${accent}33` }}>
+        <ImageSlot accent={accent} label="Movie poster (portrait)" height={440} sk="llg_v1" cover/>
+      </div>
+      <div style={{ flexShrink: 0 }}>
+        <ImageSlot accent={accent} label="Netflix / wide visual (landscape)" height={140} sk="llg_v2"/>
+      </div>
+    </div>
+  </div>
+);
 
   if (id === 'realestate') return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
