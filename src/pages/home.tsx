@@ -216,17 +216,17 @@ function Rich({ text, color = 'rgba(255,255,255,.72)', size = 14 }: { text: stri
 
 // ─── IMAGE SLOT — server-backed (GCS), visible to all users ───────────────────
 const FILE_MAP: Record<string, string> = {
-  hero_headshot: 'Slide 1 - Headshot.jpeg',
-  cert_cim: 'Slide 3 CIM official logo.jpg',
-  cert_google: 'Slide 3 - Google ads certificate badge 1.png',
-  cert_meta: 'Slide 3 - Meta-Logo.png',
-  cert_coursera: 'Slide 3 - university-of-illinois_at_urbana_champaign_logo- horizontal.png',
-  asrs_logo: 'Slide 4 part 1 - Before the name of the company in the header - ASRS logo copy.jpeg',
-  asrs_gads: 'Slide 4 part 1 - on the top of the map - Google ads.png',
-  asrs_map: 'Slide 4 part 1 - under the Google ads screenshot - geo coverage of projects all over the UK 1 - ASRS.png',
-  asrs_seo1: 'Slide 4 Part 2 - on the left side  GEO SEO.png',
-  asrs_seo2: 'Slide 4 part 2 - in the middle between the other 2 images - Picture SERP1.png',
-  asrs_seo3: 'Slide 4 part 2 - on the right side - Picture SERP2.png',
+  hero_headshot: 'hero_headshot.jpg',
+  cert_cim: 'cert_cim.jpg',
+  cert_google: 'cert_google.png',
+  cert_meta: 'cert_meta.png',
+  cert_coursera: 'cert_coursera.png',
+  asrs_logo: 'asrs_logo.jpg',
+  asrs_gads: 'asrs_gads.png',
+  asrs_map: 'asrs_map.png',
+  asrs_seo1: 'asrs_seo1.png',
+  asrs_seo2: 'asrs_seo2.png',
+  asrs_seo3: 'asrs_seo3.png',
 };
 
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
