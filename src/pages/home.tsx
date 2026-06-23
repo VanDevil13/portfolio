@@ -235,6 +235,14 @@ const FILE_MAP: Record<string, string> = {
   blu_ads1: 'blu_ads1.png',
   llg_v1: 'llg_v1.jpg',
   llg_v2: 'llg_v2.png',
+  re_v1: 're_v1.png',
+  re_v2: 're_v2.png',
+  re_v3: 're_v3.png',
+  re_v4: 're_v4.png',
+  re_v5: 're_v5.png',
+  re_v6: 're_v6.png',
+  re_v7: 're_v7.png',
+  re_ads1: 're_ads1.png',
 };
 
 function ImageSlot({ accent, label, height = 160, width, sk, cover, filledBg, circle, fluid }: {
