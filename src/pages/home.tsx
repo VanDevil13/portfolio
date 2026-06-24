@@ -1079,14 +1079,14 @@ function MobilePortfolio() {
         </section>
 
         {/* ── CLIENTS ── */}
-        <section id="m-clients" style={{ padding: '0 18px 40px' }}>
-          <div style={{ color: accent('clients'), fontSize: 10, fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Clients</div>
+        <<section id="m-clients" style={{ padding: '0 18px 40px' }}>
+          <div style={{ color: accent('clients'), fontSize: 10, fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Coverage</div>
           <h2 style={{ fontSize: 26, fontWeight: 800, margin: '0 0 4px' }}>Trusted Across 14 Markets</h2>
-          <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 12, margin: '0 0 16px' }}>Tap a highlighted country to see clients.</p>
+          <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 12, margin: '0 0 16px' }}>Tap a highlighted country to see brands.</p>
           <div style={{ position: 'relative', height: 340, borderRadius: 12, overflow: 'hidden', border: `1px solid ${accent('clients')}22`, background: 'rgba(0,0,0,.18)', marginBottom: 20 }}>
             <WorldMap accent={accent('clients')}/>
           </div>
-          <div style={{ color: accent('clients'), fontSize: 9, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase' as const, marginBottom: 8 }}>Clients</div>
+          <div style={{ color: accent('clients'), fontSize: 9, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase' as const, marginBottom: 8 }}>Brands I've Worked With</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, marginBottom: 20 }}>
             {Array.from({ length: 12 }, (_, i) => (
               <ImageSlot key={i} accent={accent('clients')} label={`Client ${i + 1}`} height={62} sk={`client_logo_map_${i}`} circle filledBg={CLIENT_LOGO_BGS[i]}/>
