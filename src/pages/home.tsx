@@ -1079,7 +1079,7 @@ function MobilePortfolio() {
         </section>
 
         {/* ── CLIENTS ── */}
-        <<section id="m-clients" style={{ padding: '0 18px 40px' }}>
+        <section id="m-clients" style={{ padding: '0 18px 40px' }}>
           <div style={{ color: accent('clients'), fontSize: 10, fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase' as const, marginBottom: 12 }}>Coverage</div>
           <h2 style={{ fontSize: 26, fontWeight: 800, margin: '0 0 4px' }}>Trusted Across 14 Markets</h2>
           <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 12, margin: '0 0 16px' }}>Tap a highlighted country to see brands.</p>
