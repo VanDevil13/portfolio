@@ -162,7 +162,7 @@ const SECTIONS = [
   { id: 'realestate',  label: 'Real Estate',Icon: Building2  as React.ComponentType<{size?:number}>, nx: 6200, ny: 4260, pw: 1260, ph: 820,  targetScale: 0.80, accent: '#fb923c', bg: 'rgba(25,10,2,0.93)'   },
   { id: 'un',          label: 'Global',     Icon: Globe      as React.ComponentType<{size?:number}>, nx:  400, ny: 4260, pw: 1260, ph: 860,  targetScale: 0.76, accent: '#4ade80', bg: 'rgba(0,20,8,0.93)'    },
   { id: 'video',       label: 'Reviews',    Icon: Volume2    as React.ComponentType<{size?:number}>, nx: 3400, ny: 3400, pw: 1260, ph: 820,  targetScale: 0.80, accent: '#fb7185', bg: 'rgba(30,2,12,0.93)'   },
-  { id: 'clients',     label: 'Clients',    Icon: Users      as React.ComponentType<{size?:number}>, nx: 2400, ny: 4400, pw: 1260, ph: 920,  targetScale: 0.76, accent: '#fbbf24', bg: 'rgba(25,18,0,0.93)'   },
+  { id: 'clients',     label: 'Coverage',   Icon: Users      as React.ComponentType<{size?:number}>, nx: 2400, ny: 4400, pw: 1260, ph: 920,  targetScale: 0.76, accent: '#fbbf24', bg: 'rgba(25,18,0,0.93)'   },
   { id: 'contact',     label: 'Contact',    Icon: Mail       as React.ComponentType<{size?:number}>, nx: 4500, ny: 4400, pw: 1260, ph: 660,  targetScale: 0.80, accent: '#e879f9', bg: 'rgba(20,2,25,0.93)'   },
   { id: 'asrs2',       label: 'UK Work',    Icon: UKFlag     as React.ComponentType<{size?:number}>, nx:  700, ny: 5600, pw: 1260, ph: 760,  targetScale: 0.88, accent: '#38bdf8', bg: 'rgba(2,15,30,0.93)',   subOf: 'asrs'        },
   { id: 'global2',     label: 'Campaigns',  Icon: Layers     as React.ComponentType<{size?:number}>, nx: 6100, ny: 5600, pw: 1260, ph: 760,  targetScale: 0.88, accent: '#f472b6', bg: 'rgba(30,5,20,0.93)',   subOf: 'global'      },
@@ -746,13 +746,13 @@ function SlideContent({ section }: { section: Section }) {
 
   if (id === 'clients') return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 10, height: '100%' }}>
-      <div><div style={tg(accent)}>Clients & Partners</div><h2 style={{ ...h2s, marginBottom: 4 }}>Trusted across 14 international markets.</h2><p style={{ margin: 0, color: 'rgba(255,255,255,.4)', fontSize: 11 }}>Hover a highlighted country to see clients.</p></div>
+      <div><div style={tg(accent)}>Commercial Footprint</div><h2 style={{ ...h2s, marginBottom: 4 }}>Trusted across 14 international markets.</h2><p style={{ margin: 0, color: 'rgba(255,255,255,.4)', fontSize: 11 }}>Hover a highlighted country to see clients.</p></div>
       <div style={{ flex: 1, position: 'relative', borderRadius: 12, overflow: 'hidden', border: `1px solid ${accent}22`, background: 'rgba(0,0,0,.18)', minHeight: 280 }}>
         <WorldMap accent={accent}/>
       </div>
       {/* Client logos — circular */}
       <div>
-        <div style={{ color: accent, fontSize: 9, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: 7 }}>Clients</div>
+        <div style={{ color: accent, fontSize: 9, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: 7 }}>Brands I've Worked With</div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 6 }}>
           {Array.from({ length: 12 }, (_, i) => (
             <ImageSlot key={i} accent={accent} label={`Client ${i + 1}`} height={62} sk={`client_logo_map_${i}`} circle filledBg={CLIENT_LOGO_BGS[i]}/>
