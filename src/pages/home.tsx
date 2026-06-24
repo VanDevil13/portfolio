@@ -1158,10 +1158,7 @@ function WorldMap({ accent }: { accent: string }) {
         const lineX2 = pinRight ? boxX : boxX + boxW, lineY2 = boxY + boxH / 2;
         return (
           <>
-            <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 10 }}>
-              <line x1={tooltip.x} y1={tooltip.y} x2={lineX2} y2={lineY2} stroke={accent} strokeWidth="1.5" strokeDasharray="4 3" opacity="0.7"/>
-              <circle cx={tooltip.x} cy={tooltip.y} r="4" fill={accent} opacity="0.9"/>
-            </svg>
+            <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 10 }}/>
             <div style={{ position: 'absolute', left: boxX, top: boxY, width: boxW, background: 'rgba(2,8,23,.97)', border: `1.5px solid ${accent}`, borderRadius: 8, padding: '9px 13px', zIndex: 11, pointerEvents: 'none', boxShadow: `0 0 20px ${accent}33, 0 6px 28px rgba(0,0,0,.8)`, backdropFilter: 'blur(12px)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8, paddingBottom: 6, borderBottom: `1px solid ${accent}33` }}>
                 <div style={{ width: 6, height: 6, borderRadius: '50%', background: accent, boxShadow: `0 0 6px ${accent}`, flexShrink: 0 }}/>
